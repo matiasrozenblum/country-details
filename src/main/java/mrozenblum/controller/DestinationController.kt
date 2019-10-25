@@ -1,8 +1,7 @@
 package mrozenblum.controller
 
-import com.google.gson.Gson
+import kotlin.math.acos
 import com.google.gson.GsonBuilder
-import com.google.gson.JsonObject
 import com.sun.net.httpserver.HttpExchange
 import mrozenblum.domain.exception.ErrorGettingResponseException
 import mrozenblum.domain.response.countrydetails.CountryDetails
@@ -12,23 +11,22 @@ import mrozenblum.domain.response.ipdata.DataResponse
 import mrozenblum.repository.CountryDetailsRepository
 import mrozenblum.repository.DollarPriceRepository
 import mrozenblum.repository.GeoIPRepository
+import mrozenblum.repository.StatisticsRepository
 import mrozenblum.repository.rest.Callback
 import java.util.*
 import java.util.TimeZone
-import java.text.DateFormat
 import java.text.SimpleDateFormat
-import javax.swing.text.html.parser.Parser
-import kotlin.collections.ArrayList
-
+import kotlin.math.cos
+import kotlin.math.sin
 
 class DestinationController(
         private val geoIPRepository: GeoIPRepository,
         private val countryDetailsRepository: CountryDetailsRepository,
-        private val dollarPriceRepository: DollarPriceRepository
+        private val dollarPriceRepository: DollarPriceRepository,
+        private val statisticsRepository: StatisticsRepository
 ) {
     private var response: Response = Response()
     private var ip: String = ""
-    private var code: String = ""
     private lateinit var exchange: HttpExchange
     private var bsAsLatLng : DoubleArray = doubleArrayOf(-34.6, -58.38)
 
@@ -64,8 +62,9 @@ class DestinationController(
     private fun getCountryDetails(code: String) {
         countryDetailsRepository.details(code, object : Callback<CountryDetails> {
             override fun onComplete(value: CountryDetails) {
-                val times = getTimes(value.timezones)
-                val distance = Math.sqrt(Math.pow(bsAsLatLng[0] - value.latlng[0], 2.0) + Math.pow(bsAsLatLng[1] - value.latlng[1], 2.0))
+                val times = times(value.timezones)
+                val distance = distance(bsAsLatLng[0], bsAsLatLng[1], value.latlng[0].toDouble(), value.latlng[1].toDouble())
+                statisticsRepository.addDistance(distance)
                 response = response.copy(language = value.languages.map { it.name },dateTimes = times ,currency = value.currencies[0].code, distance = "${"%.2f".format(distance)} km")
                 getDollarRate(value.currencies[0].code)
             }
@@ -76,12 +75,26 @@ class DestinationController(
         })
     }
 
-    private fun getTimes(time: List<String>): List<String> {
-        val df = SimpleDateFormat("HH:mm:ss")
+    private fun distance(lat1: Double, lon1: Double, lat2: Double, lon2: Double): Double {
+        if (lat1 == lat2 && lon1 == lon2) {
+            return 0.0
+        } else {
+            val theta = lon1 - lon2
+            var dist = sin(Math.toRadians(lat1)) * sin(Math.toRadians(lat2)) + cos(Math.toRadians(lat1)) * cos(Math.toRadians(lat2)) * cos(Math.toRadians(theta))
+            dist = acos(dist)
+            dist = Math.toDegrees(dist)
+            dist *= 60.0 * 1.1515 * 1.609344
+            return dist
+        }
+    }
+
+
+    private fun times(time: List<String>): List<String> {
+        val dateFormat = SimpleDateFormat("HH:mm:ss")
         val timeList = mutableListOf<String>()
         time.forEach{
-            df.timeZone = TimeZone.getTimeZone(it.replace("UTC", "GMT"))
-            timeList.add("${df.format(Date())} ($it)")
+            dateFormat.timeZone = TimeZone.getTimeZone(it.replace("UTC", "GMT"))
+            timeList.add("${dateFormat.format(Date())} ($it)")
         }
         return timeList
     }

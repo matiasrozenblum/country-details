@@ -1,12 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa73d4e1-7a6e-4588-ba56-b68d8c5552db" name="Default Changelist" comment="" />
+    <list default="true" id="aa73d4e1-7a6e-4588-ba56-b68d8c5552db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/controller/StatisticsController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/domain/response/StatisticsResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/repository/InMemoryStatisticsRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/repository/StatisticsRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mrozenblum/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/App.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mrozenblum/controller/DestinationController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/controller/DestinationController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mrozenblum/domain/response/Response.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/domain/response/Response.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/nation-details.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/AppKt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/AppKt$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/AppKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/AppKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$getCountryDetails$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$getCountryDetails$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$getDollarRate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$getDollarRate$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$getIpData$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$getIpData$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/controller/ParamParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/controller/ParamParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/exception/DestinationParamNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/exception/DestinationParamNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/exception/ErrorGettingResponseException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/exception/ErrorGettingResponseException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/countrydetails/CountryDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/countrydetails/CountryDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/countrydetails/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/countrydetails/Currency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/countrydetails/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/countrydetails/Language.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/dollarprice/DollarPriceResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/dollarprice/DollarPriceResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/ipdata/DataResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/ipdata/DataResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/CountryDetailsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/CountryDetailsRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/DollarPriceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/DollarPriceRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/GeoIPRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/GeoIPRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteCountryDetailsRepository$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteCountryDetailsRepository$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteCountryDetailsRepository$details$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteCountryDetailsRepository$details$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteCountryDetailsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteCountryDetailsRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteDollarPriceRepository$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteDollarPriceRepository$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteDollarPriceRepository$dollarPrice$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteDollarPriceRepository$dollarPrice$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteDollarPriceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteDollarPriceRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteGeoIPRepository$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteGeoIPRepository$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteGeoIPRepository$data$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteGeoIPRepository$data$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteGeoIPRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteGeoIPRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/Callback.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/Callback.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/CountryDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/CountryDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/DollarPriceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/DollarPriceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/GeoIPService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/GeoIPService.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -19,13 +70,26 @@
     </option>
   </component>
   <component name="ProjectId" id="1SdMjRqukBRm7JSx2mh2zb4WKLW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="mrozenblum.controller" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="mrozenblum.controller" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="mrozenblum.repository" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\matir\IdeaProjects\nation-details\.idea" />
     </key>
@@ -44,14 +108,14 @@
   </component>
   <component name="RunManager">
     <configuration name="mrozenblum.AppKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="nation-details" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
+      <module name="mrozenblum" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="mrozenblum.AppKt" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="WORKING_DIRECTORY" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -74,6 +138,17 @@
       <updated>1571889153982</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

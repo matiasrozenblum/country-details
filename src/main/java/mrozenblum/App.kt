@@ -4,9 +4,8 @@ import com.sun.net.httpserver.HttpHandler
 import java.net.InetSocketAddress
 import com.sun.net.httpserver.HttpServer
 import mrozenblum.controller.DestinationController
-import mrozenblum.repository.RemoteCountryDetailsRepository
-import mrozenblum.repository.RemoteDollarPriceRepository
-import mrozenblum.repository.RemoteGeoIPRepository
+import mrozenblum.controller.StatisticsController
+import mrozenblum.repository.*
 import mrozenblum.repository.rest.CountryDetailsService
 import mrozenblum.repository.rest.DollarPriceService
 import mrozenblum.repository.rest.GeoIPService
@@ -15,13 +14,20 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 fun main(){
     val server = HttpServer.create(InetSocketAddress(9291), 0)
-    val context = server.createContext("/ip-data")
+    val countryDetailsContext = server.createContext("/country/details")
+    val statisticsContext = server.createContext("/statistics")
 
-    context.handler = HttpHandler { httpExchange ->
+    countryDetailsContext.handler = HttpHandler { httpExchange ->
         DestinationController(
                 RemoteGeoIPRepository(createGeoIPService()),
                 RemoteCountryDetailsRepository(createCountryDetailsService()),
-                RemoteDollarPriceRepository(createDollarPriceService())
+                RemoteDollarPriceRepository(createDollarPriceService()),
+                InMemoryStatisticsRepository
+        ).handle(httpExchange)
+    }
+    statisticsContext.handler = HttpHandler { httpExchange ->
+        StatisticsController(
+                InMemoryStatisticsRepository
         ).handle(httpExchange)
     }
     server.start()
