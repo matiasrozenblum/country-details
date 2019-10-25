@@ -131,6 +131,7 @@
                             <mainClass>mrozenblum.AppKt</mainClass>
                         </manifest>
                     </archive>
+                    <finalName>nation-details</finalName>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
