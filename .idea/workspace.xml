@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa73d4e1-7a6e-4588-ba56-b68d8c5552db" name="Default Changelist" comment="Added new endpoint for statistics">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/mrozenblum-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/mrozenblum-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/mrozenblum-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-mrozenblum.controller.DestinationControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mrozenblum.controller.DestinationControllerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-mrozenblum.repository.RemoteCountryDetailsRepositoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mrozenblum.repository.RemoteCountryDetailsRepositoryTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-mrozenblum.repository.RemoteGeoIPRepositoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mrozenblum.repository.RemoteGeoIPRepositoryTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mrozenblum.controller.DestinationControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mrozenblum.controller.DestinationControllerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mrozenblum.repository.RemoteCountryDetailsRepositoryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mrozenblum.repository.RemoteCountryDetailsRepositoryTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mrozenblum/controller/StatisticsControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mrozenblum/controller/StatisticsControllerTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mrozenblum/controller/StatisticsControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mrozenblum/controller/StatisticsControllerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="JUnit.StatisticsControllerTest.when new request then call statistics repository">
     <configuration name="DestinationControllerTest.when new request then call both repositories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mrozenblum" />
       <extension name="coverage">
@@ -166,8 +159,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="JUnit.StatisticsControllerTest.when new request then call statistics repository" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="JUnit.DestinationControllerTest.when new request then call both repositories" />
         <item itemvalue="JUnit.RemoteGeoIPRepositoryTest.when get venues success then return venues" />
         <item itemvalue="JUnit.RemoteCountryDetailsRepositoryTest.when get reservations success then return reservations" />
@@ -214,6 +207,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mrozenblum/controller/StatisticsController.kt</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
         <watch expression="df.timeZone" language="kotlin" />

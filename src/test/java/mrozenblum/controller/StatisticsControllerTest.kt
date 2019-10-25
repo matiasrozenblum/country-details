@@ -7,10 +7,11 @@ import org.junit.Test
 import org.mockito.Mock
 import org.mockito.Mockito
 import java.io.InputStream
+import java.io.OutputStream
 import java.net.URI
 
 class StatisticsControllerTest {
-    /*private val statisticsRepository = Mockito.mock(StatisticsRepository::class.java)
+    private val statisticsRepository = Mockito.mock(StatisticsRepository::class.java)
     private val statisticsController = StatisticsController(statisticsRepository)
 
     @Test
@@ -19,10 +20,10 @@ class StatisticsControllerTest {
         val exchange = Mockito.mock(HttpExchange::class.java)
         Mockito.`when`(exchange.requestURI).thenReturn(uri)
         Mockito.`when`(exchange.requestBody).thenReturn(Mockito.mock(InputStream::class.java))
-        Mockito.`when`(statisticsRepository.greatestDistance()).thenReturn(0.0)
-        Mockito.`when`(statisticsRepository.closestDistance()).thenReturn(0.0)
-        Mockito.`when`(statisticsRepository.averageDistance()).thenReturn(0.0)
+        Mockito.`when`(exchange.responseBody).thenReturn(Mockito.mock(OutputStream::class.java))
         statisticsController.handle(exchange)
-        Mockito.verify(statisticsRepository)
-    }*/
+        Mockito.verify(statisticsRepository).greatestDistance()
+        Mockito.verify(statisticsRepository).closestDistance()
+        Mockito.verify(statisticsRepository).averageDistance()
+    }
 }
