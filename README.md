@@ -11,7 +11,7 @@ docker run --rm --name nation_container -p 9291:9291 nation
 
 Prompt will get "stuck" in the process, if you want to detach it from the process and run it in the background, run it like this:
 
-docker run --rm --name nation_container -p 9291:9291 nation -d
+docker run --rm --name nation_container -p 9291:9291 -d nation
 
 If you want to run it by hand, you need to have Java installed. Once you do, run the file called:
 
