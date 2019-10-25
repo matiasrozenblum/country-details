@@ -2,7 +2,7 @@
 Nation Details Service
 To compile docker image position yourself in the project's root folder and run:
 
-docker build-t nation .
+docker build -t nation .
 
 Note that there is a dot at the end, this is part of the command.
 To run the docker container run:
