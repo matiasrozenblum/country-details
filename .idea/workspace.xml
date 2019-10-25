@@ -1,49 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa73d4e1-7a6e-4588-ba56-b68d8c5552db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/controller/StatisticsController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/domain/response/StatisticsResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/repository/InMemoryStatisticsRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/repository/StatisticsRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="aa73d4e1-7a6e-4588-ba56-b68d8c5552db" name="Default Changelist" comment="Added new endpoint for statistics">
+      <change afterPath="$PROJECT_DIR$/src/test/java/mrozenblum/KotlinMatchers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mrozenblum/controller/DestinationControllerTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mrozenblum/controller/ParamParserTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mrozenblum/controller/StatisticsControllerTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mrozenblum/domain/StubFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mrozenblum/repository/RemoteCountryDetailsRepositoryTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mrozenblum/repository/RemoteGeoIPRepositoryTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mrozenblum/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mrozenblum/controller/DestinationController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/controller/DestinationController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mrozenblum/domain/response/Response.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/domain/response/Response.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/nation-details.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/AppKt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/AppKt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/AppKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/AppKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$getCountryDetails$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$getCountryDetails$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$getDollarRate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$getDollarRate$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$getIpData$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController$getIpData$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/controller/DestinationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/controller/ParamParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/controller/ParamParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/exception/DestinationParamNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/exception/DestinationParamNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/exception/ErrorGettingResponseException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/exception/ErrorGettingResponseException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/countrydetails/CountryDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/countrydetails/CountryDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/countrydetails/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/countrydetails/Currency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/countrydetails/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/countrydetails/Language.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/dollarprice/DollarPriceResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/dollarprice/DollarPriceResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/ipdata/DataResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/domain/response/ipdata/DataResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/CountryDetailsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/CountryDetailsRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/DollarPriceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/DollarPriceRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/GeoIPRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/GeoIPRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteCountryDetailsRepository$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteCountryDetailsRepository$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteCountryDetailsRepository$details$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteCountryDetailsRepository$details$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteCountryDetailsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteCountryDetailsRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteDollarPriceRepository$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteDollarPriceRepository$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteDollarPriceRepository$dollarPrice$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteDollarPriceRepository$dollarPrice$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteDollarPriceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteDollarPriceRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteGeoIPRepository$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteGeoIPRepository$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteGeoIPRepository$data$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteGeoIPRepository$data$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteGeoIPRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/RemoteGeoIPRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/Callback.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/Callback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/CountryDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/CountryDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/DollarPriceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/DollarPriceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/GeoIPService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mrozenblum/repository/rest/GeoIPService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mrozenblum/controller/StatisticsController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mrozenblum/controller/StatisticsController.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +23,7 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -74,6 +42,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -106,7 +75,71 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.StatisticsControllerTest.when new request then call statistics repository">
+    <configuration name="DestinationControllerTest.when new request then call both repositories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mrozenblum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mrozenblum.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mrozenblum.controller" />
+      <option name="MAIN_CLASS_NAME" value="mrozenblum.controller.DestinationControllerTest" />
+      <option name="METHOD_NAME" value="when new request then call both repositories" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RemoteCountryDetailsRepositoryTest.when get reservations success then return reservations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mrozenblum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mrozenblum.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mrozenblum.repository" />
+      <option name="MAIN_CLASS_NAME" value="mrozenblum.repository.RemoteCountryDetailsRepositoryTest" />
+      <option name="METHOD_NAME" value="when get reservations success then return reservations" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RemoteGeoIPRepositoryTest.when get venues success then return venues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mrozenblum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mrozenblum.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mrozenblum.repository" />
+      <option name="MAIN_CLASS_NAME" value="mrozenblum.repository.RemoteGeoIPRepositoryTest" />
+      <option name="METHOD_NAME" value="when get venues success then return venues" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatisticsControllerTest.when new request then call statistics repository" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mrozenblum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mrozenblum.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mrozenblum.controller" />
+      <option name="MAIN_CLASS_NAME" value="mrozenblum.controller.StatisticsControllerTest" />
+      <option name="METHOD_NAME" value="when new request then call statistics repository" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="mrozenblum.AppKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="mrozenblum" />
       <option name="VM_PARAMETERS" value="" />
@@ -122,6 +155,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StatisticsControllerTest.when new request then call statistics repository" />
+        <item itemvalue="JUnit.DestinationControllerTest.when new request then call both repositories" />
+        <item itemvalue="JUnit.RemoteGeoIPRepositoryTest.when get venues success then return venues" />
+        <item itemvalue="JUnit.RemoteCountryDetailsRepositoryTest.when get reservations success then return reservations" />
         <item itemvalue="Kotlin.mrozenblum.AppKt" />
       </list>
     </recent_temporary>
@@ -144,17 +181,35 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mrozenblum/controller/StatisticsController.kt</url>
+          <line>15</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
         <watch expression="df.timeZone" language="kotlin" />
         <watch expression="TimeZone.getTimeZone(&quot;UTC+01:00&quot;)" language="kotlin" />
+      </configuration>
+      <configuration name="JUnit">
+        <watch expression="statisticsRepository.greatestDistance()" language="kotlin" />
+        <watch expression="statisticsRepository" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>

@@ -1,22 +1,9 @@
 package mrozenblum.controller
 
-import kotlin.math.acos
 import com.google.gson.GsonBuilder
 import com.sun.net.httpserver.HttpExchange
-import mrozenblum.domain.exception.ErrorGettingResponseException
-import mrozenblum.domain.response.countrydetails.CountryDetails
-import mrozenblum.domain.response.Response
 import mrozenblum.domain.response.StatisticsResponse
-import mrozenblum.domain.response.dollarprice.DollarPriceResponse
-import mrozenblum.domain.response.ipdata.DataResponse
-import mrozenblum.repository.InMemoryStatisticsRepository
 import mrozenblum.repository.StatisticsRepository
-import mrozenblum.repository.rest.Callback
-import java.util.*
-import java.util.TimeZone
-import java.text.SimpleDateFormat
-import kotlin.math.cos
-import kotlin.math.sin
 
 class StatisticsController(
         private val statisticsRepository: StatisticsRepository
